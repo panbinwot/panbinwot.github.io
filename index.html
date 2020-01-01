@@ -1,190 +1,393 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<title>Bin is a funny guy</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-    body,
-    html {
-        height: 100%;
-        font-family: "Inconsolata", sans-serif;
-    }
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jackson Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-    .bgimg {
-        background-position: center;
-        background-size: cover;
-        background-image: url("/w3images/coffeehouse.jpg");
-        min-height: 75%;
-    }
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    .menu {
-        display: none;
-    }
-</style>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-<body>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-    <!-- Links (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s3">
-                <a href="#" class="w3-button w3-block w3-black">HOME</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-            </div>
-        </div>
-    </div>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-    <!-- Header with image -->
-    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-            <span class="w3-tag">Open from 6am to 5pm</span>
-        </div>
-        <div class="w3-display-middle w3-center">
-            <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
-        </div>
-        <div class="w3-display-bottomright w3-center w3-padding-large">
-            <span class="w3-text-white">15 Adr street, 5015</span>
-        </div>
-    </header>
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/Binn.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Bin Pan</a></h1>
+				<span class="position"><a href="#">From</a> Beijing, Lives in NYC</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About Me</a></li>
+						<li><a href="#" data-nav-section="experience">Projects</a></li>
+						<li><a href="#" data-nav-section="blog">Photos & Tours</a></li>
+					</ul>
+				</div>
+			</nav>
 
-    <!-- Add a background color and large text to the whole page -->
-    <div class="w3-sand w3-grayscale w3-large">
+			<div class="colorlib-footer">
+				<ul>
+					<li><a href="#"><i class="icon-facebook2">my fackbook</i></a></li>
+					<li><a href="#">my twitter<i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
 
-        <!-- About Container -->
-        <div class="w3-container" id="about">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
-                    sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is
-                            the new sweet.</i></p>
-                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
-                </div>
-                <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-                <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-                <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
-            </div>
-        </div>
+		</aside>
 
-        <!-- Menu Container -->
-        <div class="w3-container" id="menu">
-            <div class="w3-content" style="max-width:700px">
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
 
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+						<li style="background-image: url(images/lego_aircraft.jpg);">
+							<div class="overlay">
+								<h3>
+									<font face="verdana" color="white">Welcome to my webpage. <br> It's currently under construction!!!.</font>
+								</h3>
+							</div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+										<div class="slider-text-inner">
+											<div class="desc">
+												<h1>
+													<font color="white">It's an aircraft.</font>
+												</h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
 
-                <div class="w3-row w3-center w3-card w3-padding">
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-                        <div class="w3-col s6 tablink">Eat</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-                        <div class="w3-col s6 tablink">Drink</div>
-                    </a>
-                </div>
+						<li style="background-image: url(images/lego_car.jpg);">
+							<div class="overlay"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+										<div class="slider-text-inner">
+											<div class="desc">
+												<h1><font color = "white"> Also a monster truck.</font></h1>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>	
 
-                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Bread Basket</h5>
-                    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+						<li style="background-image: url(images/lego_man.jpg);">
+							<!-- <div class="overlay"></div> -->
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+										<div class="slider-text-inner js-fullheight">
+											<div class="desc">
+												<h1> <font color = "white"> And a trooper!</font></h1>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
 
-                    <h5>Honey Almond Granola with Fruits</h5>
-                    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-                    <br>
+				  	</ul>
+			  	</div>
+			</section>
 
-                    <h5>Belgian Waffle</h5>
-                    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Me</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Bin Pan (Mandarin: 潘斌).</strong> I'm not really good at introducing myself. So, here are some random facts about Bin.</p>
+										<p> 
+											Bin is a passionate young man from Beijing, China. He studied accounting at a local business-like college in Beijing. After 4 years of struggling with accounting and law terms, he finally gave up his career in accounting and turned to data science. 
+										</p>
+										<p>
+											He always pictures himself at the intersection of finance, statistical learning, and product development. Well, therapist says that being confident is good for him. But the truth is he is not good at any of these. He’s also proficient in food poisoning himself.
+										</p>
+										<p>
+											Also, he prefers HIMYM than Friends, though he dreamed of RR’s love story all the time. He met some girl in NYC. But what he thought was there, she thought differently. Yea, he wasn’t hurt at all.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div>
+									<h2 >Interests and Skills</h2>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Econometrics</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Labor Economics</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Python, R, VBA, html, Flask, R, Latex, C++</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Call Mom When Cooking</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>Don't know what to put here yet...Stay tuned!!!</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <h5>Scrambled eggs</h5>
-                    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                    <br>
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                    <h5>Blueberry Pancakes</h5>
-                    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-                </div>
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
 
-                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Coffee</h5>
-                    <p class="w3-text-grey">Regular coffee 2.50</p><br>
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
 
-                    <h5>Chocolato</h5>
-                    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+					               <div class="timeline-label">
+					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
+					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+					               </div>
+					            </div>
+					         </article>
 
-                    <h5>Corretto</h5>
-                    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
 
-                    <h5>Iced tea</h5>
-                    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-                    <h5>Soda</h5>
-                    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-                </div>
-                <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-            </div>
-        </div>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-        <!-- Contact/Area Container -->
-        <div class="w3-container" id="where" style="padding-bottom:32px;">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-                <p>Find us at some address at some place.</p>
-                <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-                <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
-                    understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both
-                    look and taste.</p>
-                <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-                <form action="/action_page.php" target="_blank">
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
-                            name="Name"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people"
-                            required name="People"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
-                            required name="date" value="2017-11-16T20:00"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
-                            placeholder="Message \ Special requirements" required name="Message"></p>
-                    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-                </form>
-            </div>
-        </div>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-        <!-- End page content -->
-    </div>
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-    <!-- Footer -->
-    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p>
-    </footer>
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
 
-    <script>
-        // Tabbed Menu
-        function openMenu(evt, menuName) {
-            var i, x, tablinks;
-            x = document.getElementsByClassName("menu");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-            }
-            document.getElementById(menuName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-        }
-        document.getElementById("myLink").click();
-    </script>
+			<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Renovating National Gallery</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-</body>
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
